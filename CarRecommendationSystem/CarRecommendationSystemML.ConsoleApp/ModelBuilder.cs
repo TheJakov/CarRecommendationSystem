@@ -46,7 +46,8 @@ namespace CarRecommendationSystemML.ConsoleApp
         {
             // Data process configuration with pipeline data transformations 
             var dataProcessPipeline = mlContext.Transforms.Conversion.MapValueToKey("name", "name")
-                                      .Append(mlContext.Transforms.Concatenate("Features", new[] { "year", "price", "overall_score", "driving_score", "comfort_score", "interior_score", "tech_score", "storage_score", "economical_score", "good_value_score", "litres_on_100km", "horsepower" }));
+                                      .Append(mlContext.Transforms.Categorical.OneHotEncoding(new[] { new InputOutputColumnPair("transmission", "transmission"), new InputOutputColumnPair("fuel", "fuel") }))
+                                      .Append(mlContext.Transforms.Concatenate("Features", new[] { "transmission", "fuel", "year", "price", "overall_score", "driving_score", "comfort_score", "interior_score", "tech_score", "storage_score", "economical_score", "good_value_score", "litres_on_100km", "horsepower" }));
             // Set the training algorithm 
             var trainer = mlContext.MulticlassClassification.Trainers.LightGbm(labelColumnName: "name", featureColumnName: "Features")
                                       .Append(mlContext.Transforms.Conversion.MapKeyToValue("PredictedLabel", "PredictedLabel"));

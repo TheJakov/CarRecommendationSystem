@@ -5,7 +5,6 @@ using System.IO;
 using System.Linq;
 using Microsoft.ML;
 using CarRecommendationSystemML.Model;
-using Microsoft.Win32.SafeHandles;
 
 namespace CarRecommendationSystemML.ConsoleApp
 {
@@ -39,7 +38,7 @@ namespace CarRecommendationSystemML.ConsoleApp
             Console.WriteLine($"transmission: {sampleData.Transmission}");
             Console.WriteLine($"horsepower: {sampleData.Horsepower}");
             Console.WriteLine($"fuel: {sampleData.Fuel}");
-            Console.WriteLine($"\n\nActual Name: {sampleData.Name} \nPredicted Name value {predictionResult.Prediction} \nPrediction was: {predictionResult.Score.Max()*100}% \nTotal number of records: {predictionResult.Score.Count()} \nPredicted Name scores: [{String.Join(",", predictionResult.Score)}]\n\n");
+            Console.WriteLine($"\n\nActual Name: {sampleData.Name} \nPredicted Name value: {predictionResult.Prediction} \nPrediction accuracy: {predictionResult.Score.Max() * 100}%\nOverall prediction accuracy: 27.85425 \nTotal number of records: {predictionResult.Score.Count()} \nPredicted Name scores: [{String.Join(",", predictionResult.Score)}]\n\n");
             Console.WriteLine("=============== End of process, hit any key to finish ===============");
             Console.ReadKey();
         }
@@ -63,7 +62,8 @@ namespace CarRecommendationSystemML.ConsoleApp
             // Use first line of dataset as model input
             // You can replace this with new test data (hardcoded or from end-user application)
             ModelInput sampleForPrediction = mlContext.Data.CreateEnumerable<ModelInput>(dataView, false)
-                                                                        .Last();
+                                                                        .First();
+
             //Under this goes testing override
 
             sampleForPrediction.Name = "This is custom made user preferences for the car with budget";

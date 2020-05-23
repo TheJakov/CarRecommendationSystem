@@ -133,12 +133,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CarRecommendationSystemML.Model\CarRecommendationSystemML.Model.csproj">
-      <Project>{E52B9A26-ACFA-4F9B-8B3A-3F24164502B1}</Project>
-      <Name>CarRecommendationSystemML.Model</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

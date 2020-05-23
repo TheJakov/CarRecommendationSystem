@@ -1,98 +1,98 @@
 car_id,name,year,price,overall_score,driving_score,comfort_score,interior_score,tech_score,storage_score,economical_score,good_value_score,litres_on_100km,seats,transmission,horsepower,fuel
-1,Mercedes-Benz C-Class C 300 Sedan (2020),2020,41400,76,80,70,80,85,70,70,70,10,5,automatic,255,petrol
-2,Mercedes-Benz C-Class AMG C 43 Sedan (2020),2020,55950,76,80,70,80,85,70,70,70,13,5,automatic,385,petrol
-3,Mercedes-Benz C-Class C 300 Convertible (2019),2019,51850,76,80,70,80,85,65,65,70,12,4,automatic,255,petrol
-4,Mercedes-Benz C-Class AMG C 63 Sedan (2019),2019,67000,76,80,70,80,85,70,65,70,14,5,automatic,469,petrol
-5,Mercedes-Benz C-Class AMG C 63 S Coupe (2020),2020,77500,76,80,70,80,85,70,65,65,14,4,automatic,503,petrol
-6,BMW 3 Series 330i Sedan (2020),2020,40750,76,80,70,75,70,80,80,75,9,5,automatic,255,petrol
-7,BMW 3 Series M340i Sedan (2020),2020,54000,76,80,70,75,70,80,78,75,11,5,automatic,382,petrol
-8,BMW 3 Series 320i Sedan (2018),2018,34900,82,90,90,80,80,75,79,80,10,5,automatic,180,petrol
-9,BMW 3 Series Diesel 328d Wagon (2018),2018,46150,80,80,90,82,80,80,82,75,8,5,automatic,180,diesel
-10,BMW 3 Series Hybrid 330e Sedan (2017),2017,44100,80,70,80,85,85,80,80,80,9,5,automatic,180,hybrid
-11,Audi A4 Premium Plus 45 TFSI Sedan (2020),2020,44000,83,85,80,85,90,80,80,80,11,5,automatic,248,petrol
-12,Audi A4 2.0 TFSI Premium Plus Sedan (2019),2019,42900,82,85,80,85,90,80,81,80,9,5,automatic,188,petrol
-13,Audi A4 2.0 TFSI Titanium Sedan (2019),2019,39200,82,85,80,85,90,80,81,83,9,5,automatic,188,petrol
-14,Audi A4 2.0 TFSI ultra Premium Sedan (2017),2017,34900,85,85,85,85,90,80,81,84,9,5,automatic,190,petrol
-15,Volkswagen Passat Wolfsburg Edition Sedan (2019),2019,25295,70,60,65,80,70,85,80,85,10,5,automatic,174,petrol
-16,Volkswagen Passat SE R-Line Sedan (2019),2019,29995,70,60,65,80,70,85,80,85,10,5,automatic,174,petrol
-17,Volkswagen Passat R-Line Sedan (2018),2018,24995,70,60,65,80,70,85,80,85,10,5,automatic,174,petrol
-18,Volkswagen Passat SEL Premium Sedan (2018),2018,31650,70,60,65,80,70,85,80,81,10,5,automatic,174,petrol
-19,Volkswagen Passat S Sedan (2018),2018,22995,70,60,65,80,70,85,80,87,10,5,automatic,174,petrol
-20,Toyota Avalon Limited Sedan (2020),2020,42175,78,75,80,75,80,80,80,80,11,5,automatic,301,petrol
-21,Toyota Avalon XLE Sedan (2020),2020,35875,78,75,80,75,80,80,80,80,11,5,automatic,301,petrol
-22,Toyota Avalon XSE Sedan (2020),2020,38375,78,75,80,75,80,80,80,80,11,5,automatic,301,petrol
-23,Toyota Avalon XLE Sedan (2018),2018,33500,76,70,85,85,75,75,70,70,12,5,automatic,268,petrol
-24,Toyota Camry SE Sedan (2020),2020,26170,76,75,75,80,75,80,80,75,9,5,automatic,203,petrol
-25,Toyota Camry LE Sedan (2019),2019,24600,76,75,75,80,65,90,80,76,9,5,automatic,203,petrol
-26,Jaguar XE S Sedan (2020) ,2020,39900,70,75,80,65,65,65,75,70,10,5,automatic,247,petrol
-27,Jaguar XE R-Dynamic S Sedan (2020),2020,46295,70,75,80,65,65,65,75,70,11,5,automatic,296,petrol
-28,Jaguar XE 30t R-Sport Sedan (2019),2019,51635,70,75,80,65,65,75,75,65,11,5,automatic,296,petrol
-29,Jaguar XE 20d Sedan (2019),2019,38515,70,75,80,65,65,75,80,70,8,5,automatic,180,diesel
-30,Jaguar XE 25t Landmark Sedan (2019),2019,48990,70,75,80,65,65,75,75,70,10,5,automatic,247,petrol
-31,Jaguar XE 20d Turbodiesel Sedan (2018),2018,37225,70,75,80,65,65,75,80,71,8,5,automatic,180,diesel
-32,Alfa Romeo Giulia Ti Sedan (2020),2020,41400,72,80,75,75,65,60,70,60,11,5,automatic,280,petrol
-33,Alfa Romeo Giulia Sedan (2020),2020,39400,72,80,75,75,65,60,70,61,11,5,automatic,280,petrol
-34,Alfa Romeo Giulia Ti Sport Sedan (2020),2020,46400,72,80,75,75,65,60,70,58,11,5,automatic,280,petrol
-35,Alfa Romeo Giulia Quadrifoglio Sedan (2020),2020,74500,72,80,75,75,65,60,65,65,14,5,automatic,505,petrol
-36,Alfa Romeo Giulia Ti Lusso Sedan (2019),2019,42995,69,80,75,75,50,60,70,60,11,5,automatic,280,petrol
-37,Ford Fusion SE Sedan (2020),2020,24500,79,75,80,80,85,85,75,70,11,5,automatic,181,petrol
-38,Ford Fusion SEL Sedan (2020),2020,28690,79,75,80,80,85,85,75,68,11,5,automatic,181,petrol
-39,Ford Fusion Titanium Sedan (2020),2020,34450,79,75,80,80,85,85,75,71,11,5,automatic,245,petrol
-40,Ford Fusion Sport Sedan (2019),2019,40015,79,75,80,80,85,90,65,70,14,5,automatic,325,petrol
-41,Ford Fusion S Sedan (2019),2019,22840,79,75,80,80,85,90,72,73,11,5,automatic,173,petrol
-42,Ford Fusion Sport w/EcoBoost Sedan (2018),2018,33845,79,75,80,80,85,90,65,75,14,5,automatic,325,petrol
-43,INFINITI Q50 3.0t LUXE Sedan (2020),2020,38850,64,80,65,65,45,60,75,70,12,5,automatic,300,petrol
-44,INFINITI Q50 3.0t SPORT Sedan (2020),2020,48500,64,81,65,65,48,60,75,70,12,5,automatic,300,petrol
-45,INFINITI Q50 RED SPORT 400 Sedan (2020),2020,54250,64,81,65,65,50,60,75,70,13,5,automatic,400,petrol
-46,INFINITI Q50 2.0t PURE Sedan (2019),2019,35650,64,80,65,65,45,60,75,70,11,5,automatic,208,petrol
-47,INFINITI Q50 3.0t Signature Edition Sedan (2019),2019,41650,64,80,65,65,45,60,75,70,12,5,automatic,300,petrol
-48,Mazda 6 Touring Sedan (2020),2020,26700,81,85,80,80,75,80,80,80,10,5,automatic,187,petrol
-49,Mazda 6 Signature Sedan (2020),2020,35400,81,85,80,80,75,80,80,80,11,5,automatic,227,petrol
-50,Mazda 6 Grand Touring Sedan (2020),2020,29800,81,85,80,80,75,80,80,80,11,5,automatic,227,petrol
-51,Mazda 6 Sport Sedan (2019),2019,23800,82,85,80,85,75,80,80,80,10,5,automatic,187,petrol
-52,Mazda 6 Grand Touring Reserve Sedan (2018),2018,31700,82,85,80,85,75,80,80,80,11,5,automatic,227,petrol
-53,Lexus IS 300 Sedan (2020),2020,38560,72,70,80,65,65,75,65,80,12,5,automatic,241,petrol
-54,Lexus IS 300 F SPORT Sedan (2020),2020,41755,72,70,80,65,65,75,65,80,12,5,automatic,241,petrol
-55,Lexus IS 350 Sedan (2020),2020,42180,73,75,80,65,65,75,65,80,12,5,automatic,311,petrol
-56,Lexus IS 350 F SPORT Sedan (2020),2020,45375,73,75,80,65,68,75,65,80,12,5,automatic,311,petrol
-57,Kia Optima LX Sedan (2020),2020,23390,78,80,75,80,80,75,55,75,10,5,automatic,185,petrol
-58,Kia Optima SX Sedan (2020),2020,32190,78,80,75,81,82,75,55,75,12,5,automatic,245,petrol
-59,Kia Optima S Sedan (2019),2019,24990,76,80,75,80,75,80,60,75,11,5,automatic,185,petrol
-60,Kia Optima SX Turbo Sedan (2018),2018,30600,72,60,70,80,75,80,55,70,11,5,automatic,245,petrol
-61,Kia Optima LX Sedan (2017),2017,22200,70,60,60,70,80,80,60,70,10,5,automatic,185,petrol
-62,Nissan Altima 2.5 SR Sedan (2020),2020,25700,76,75,75,75,80,80,80,70,9,5,automatic,188,petrol
-63,Nissan Altima 2.5 SL Sedan (2020),2020,30240,76,75,75,75,80,80,80,70,9,5,automatic,188,petrol
-64,Nissan Altima VC-T Platinum Sedan (2020),2020,35180,76,79,75,77,80,80,80,70,10,5,automatic,248,petrol
-65,Nissan Maxima 3.5 S Sedan (2020),2020,34250,74,75,80,70,70,70,65,70,12,5,automatic,300,petrol
-66,Nissan Maxima 3.5 SL Sedan (2020),2020,38640,74,75,80,72,72,70,65,70,12,5,automatic,300,petrol
-67,Nissan Maxima Platinum Sedan (2020),2020,41640,74,75,80,75,75,70,65,70,12,5,automatic,300,petrol
-68,Volvo S60 T6 Momentum Sedan (2020),2020,40550,79,85,75,75,80,75,70,75,11,5,automatic,316,petrol
-69,Volvo S60 T5 Momentum Sedan (2020),2020,36050,79,85,75,75,80,75,70,75,10,5,automatic,250,petrol
-70,Volvo S60 T6 Insciption Sedan (2020),2020,47400,79,85,75,75,80,75,70,75,11,5,automatic,316,petrol
-71,Volvo S60 T8 R-Design Twin Engine Hybrid Sedan (2020),2020,55400,79,87,76,77,80,75,77,75,9,5,automatic,400,hybrid
-72,Volvo S60 T5 R-Design Sedan (2019),2019,41900,79,85,75,75,80,75,72,75,10,5,automatic,250,petrol
-73,Hyundai Sonata SE Sedan (2020),2020,23600,80,75,75,80,85,85,70,85,9,5,automatic,191,petrol
-74,Hyundai Sonata Limited Sedan (2020),2020,33500,80,75,75,80,87,85,70,85,9,5,automatic,180,petrol
-75,Hyundai Sonata Sport Sedan (2019),2019,25000,77,80,80,80,75,80,70,82,10,5,automatic,185,petrol
-76,Hyundai Sonata Eco Sedan (2019),2019,22850,77,80,80,80,75,80,70,82,9,5,automatic,178,hybrid
-77,Hyundai Sonata Limited 2.0T Sedan (2018),2018,31900,77,80,80,80,75,80,70,82,11,5,automatic,245,petrol
-78,Honda Accord Touring Sedan (2020),2020,36100,83,85,80,80,80,90,70,75,11,5,automatic,252,petrol
-79,Honda Accord LX Sedan (2020),2020,23870,83,83,80,80,80,90,72,75,9,5,automatic,192,petrol
-80,Honda Accord EX Sedan (2020),2020,27770,83,83,80,80,82,90,72,75,9,5,automatic,192,petrol
-81,Honda Accord Sport Sedan (2019),2019,26180,83,85,80,80,80,95,72,75,9,5,automatic,192,petrol
-82,Honda Accord EX-L Sedan (2018),2018,29970,83,85,80,80,82,95,72,75,9,5,automatic,192,petrol
-83,Chevrolet Malibu L Sedan (2020),2020,22095,76,80,80,70,81,65,72,70,9,5,automatic,160,petrol
-84,Chevrolet Malibu RS Sedan (2020),2020,24220,76,80,80,70,83,65,72,70,9,5,automatic,160,petrol
-85,Chevrolet Malibu Premier Sedan (2020),2020,33320,76,80,80,75,83,65,72,70,11,5,automatic,250,petrol
-86,Chevrolet Malibu Hybrid Sedan (2019),2019,28220,76,80,80,70,81,65,72,70,6,5,automatic,122,hybrid
-87,Ford Taurus SE Sedan (2019),2019,27800,68,70,65,60,75,80,75,68,14,5,automatic,288,biofuels
-88,Ford Taurus SHO Sedan (2019),2019,42975,68,70,65,70,78,80,75,68,15,5,automatic,365,petrol
-89,Ford Taurus Limited Sedan (2019),2019,37310,68,70,65,65,75,80,75,68,14,5,automatic,288,biofuels
-90,Volkswagen Arteon SE Hatchback (2020),2020,35995,75,75,80,75,70,80,70,70,11,5,automatic,268,petrol
-91,Volkswagen Arteon SEL Premium R-Line Hatchback (2020),2020,47695,75,75,82,80,75,80,70,70,12,5,automatic,268,petrol
-92,Volkswagen Arteon SE Hatchback (2019),2019,35845,75,75,80,75,70,90,70,70,11,5,automatic,268,petrol
-93,Volkswagen Arteon SEL Premium Hatchback (2019),2019,44945,75,75,80,79,75,90,70,70,12,5,automatic,268,petrol
-94,Subaru Legacy Sedan (2020),2020,22745,74,70,80,80,65,80,75,75,9,5,automatic,182,petrol
-95,Subaru Legacy Touring XT Sedan (2020),2020,35895,74,74,80,85,73,80,75,75,11,5,automatic,260,petrol
-96,Subaru Legacy 2.5i Sedan (2019),2019,22545,70,70,75,75,65,80,72,75,10,5,automatic,175,petrol
-97,Subaru Legacy 3.6R Limited Sedan (2019),2019,31545,75,70,75,80,75,80,72,75,12,5,automatic,256,petrol
+1,Mercedes-Benz C-Class C 300 Sedan (2020),2020,41400,76,80,70,80,85,70,70,70,10,5,shiftable automatic,255,petrol
+2,Mercedes-Benz C-Class AMG C 43 Sedan (2020),2020,55950,76,80,70,80,85,70,70,70,13,5,shiftable automatic,385,petrol
+3,Mercedes-Benz C-Class C 300 Convertible (2019),2019,51850,76,80,70,80,85,65,65,70,12,4,shiftable automatic,255,petrol
+4,Mercedes-Benz C-Class AMG C 63 Sedan (2019),2019,67000,76,80,70,80,85,70,65,70,14,5,shiftable automatic,469,petrol
+5,Mercedes-Benz C-Class AMG C 63 S Coupe (2020),2020,77500,76,80,70,80,85,70,65,65,14,4,shiftable automatic,503,petrol
+6,BMW 3 Series 330i Sedan (2020),2020,40750,76,80,70,75,70,80,80,75,9,5,shiftable automatic,255,petrol
+7,BMW 3 Series M340i Sedan (2020),2020,54000,76,80,70,75,70,80,78,75,11,5,shiftable automatic,382,petrol
+8,BMW 3 Series 320i Sedan (2018),2018,34900,82,90,90,80,80,75,79,80,10,5,shiftable automatic,180,petrol
+9,BMW 3 Series Diesel 328d Wagon (2018),2018,46150,80,80,90,82,80,80,82,75,8,5,shiftable automatic,180,diesel
+10,BMW 3 Series Hybrid 330e Sedan (2017),2017,44100,80,70,80,85,85,80,80,80,9,5,shiftable automatic,180,hybrid
+11,Audi A4 Premium Plus 45 TFSI Sedan (2020),2020,44000,83,85,80,85,90,80,80,80,11,5,shiftable automatic,248,petrol
+12,Audi A4 2.0 TFSI Premium Plus Sedan (2019),2019,42900,82,85,80,85,90,80,81,80,9,5,shiftable automatic,188,petrol
+13,Audi A4 2.0 TFSI Titanium Sedan (2019),2019,39200,82,85,80,85,90,80,81,83,9,5,shiftable automatic,188,petrol
+14,Audi A4 2.0 TFSI ultra Premium Sedan (2017),2017,34900,85,85,85,85,90,80,81,84,9,5,shiftable automatic,190,petrol
+15,Volkswagen Passat Wolfsburg Edition Sedan (2019),2019,25295,70,60,65,80,70,85,80,85,10,5,shiftable automatic,174,petrol
+16,Volkswagen Passat SE R-Line Sedan (2019),2019,29995,70,60,65,80,70,85,80,85,10,5,shiftable automatic,174,petrol
+17,Volkswagen Passat R-Line Sedan (2018),2018,24995,70,60,65,80,70,85,80,85,10,5,shiftable automatic,174,petrol
+18,Volkswagen Passat SEL Premium Sedan (2018),2018,31650,70,60,65,80,70,85,80,81,10,5,shiftable automatic,174,petrol
+19,Volkswagen Passat S Sedan (2018),2018,22995,70,60,65,80,70,85,80,87,10,5,shiftable automatic,174,petrol
+20,Toyota Avalon Limited Sedan (2020),2020,42175,78,75,80,75,80,80,80,80,11,5,shiftable automatic,301,petrol
+21,Toyota Avalon XLE Sedan (2020),2020,35875,78,75,80,75,80,80,80,80,11,5,shiftable automatic,301,petrol
+22,Toyota Avalon XSE Sedan (2020),2020,38375,78,75,80,75,80,80,80,80,11,5,shiftable automatic,301,petrol
+23,Toyota Avalon XLE Sedan (2018),2018,33500,76,70,85,85,75,75,70,70,12,5,shiftable automatic,268,petrol
+24,Toyota Camry SE Sedan (2020),2020,26170,76,75,75,80,75,80,80,75,9,5,shiftable automatic,203,petrol
+25,Toyota Camry LE Sedan (2019),2019,24600,76,75,75,80,65,90,80,76,9,5,shiftable automatic,203,petrol
+26,Jaguar XE S Sedan (2020) ,2020,39900,70,75,80,65,65,65,75,70,10,5,continuous automatic,247,petrol
+27,Jaguar XE R-Dynamic S Sedan (2020),2020,46295,70,75,80,65,65,65,75,70,11,5,shiftable automatic,296,petrol
+28,Jaguar XE 30t R-Sport Sedan (2019),2019,51635,70,75,80,65,65,75,75,65,11,5,shiftable automatic,296,petrol
+29,Jaguar XE 20d Sedan (2019),2019,38515,70,75,80,65,65,75,80,70,8,5,continuous automatic,180,diesel
+30,Jaguar XE 25t Landmark Sedan (2019),2019,48990,70,75,80,65,65,75,75,70,10,5,continuous automatic,247,petrol
+31,Jaguar XE 20d Turbodiesel Sedan (2018),2018,37225,70,75,80,65,65,75,80,71,8,5,continuous automatic,180,diesel
+32,Alfa Romeo Giulia Ti Sedan (2020),2020,41400,72,80,75,75,65,60,70,60,11,5,shiftable automatic,280,petrol
+33,Alfa Romeo Giulia Sedan (2020),2020,39400,72,80,75,75,65,60,70,61,11,5,shiftable automatic,280,petrol
+34,Alfa Romeo Giulia Ti Sport Sedan (2020),2020,46400,72,80,75,75,65,60,70,58,11,5,shiftable automatic,280,petrol
+35,Alfa Romeo Giulia Quadrifoglio Sedan (2020),2020,74500,72,80,75,75,65,60,65,65,14,5,shiftable automatic,505,petrol
+36,Alfa Romeo Giulia Ti Lusso Sedan (2019),2019,42995,69,80,75,75,50,60,70,60,11,5,shiftable automatic,280,petrol
+37,Ford Fusion SE Sedan (2020),2020,24500,79,75,80,80,85,85,75,70,11,5,continuous automatic,181,petrol
+38,Ford Fusion SEL Sedan (2020),2020,28690,79,75,80,80,85,85,75,68,11,5,continuous automatic,181,petrol
+39,Ford Fusion Titanium Sedan (2020),2020,34450,79,75,80,80,85,85,75,71,11,5,shiftable automatic,245,petrol
+40,Ford Fusion Sport Sedan (2019),2019,40015,79,75,80,80,85,90,65,70,14,5,shiftable automatic,325,petrol
+41,Ford Fusion S Sedan (2019),2019,22840,79,75,80,80,85,90,72,73,11,5,continuous automatic,173,petrol
+42,Ford Fusion Sport w/EcoBoost Sedan (2018),2018,33845,79,75,80,80,85,90,65,75,14,5,shiftable automatic,325,petrol
+43,INFINITI Q50 3.0t LUXE Sedan (2020),2020,38850,64,80,65,65,45,60,75,70,12,5,shiftable automatic,300,petrol
+44,INFINITI Q50 3.0t SPORT Sedan (2020),2020,48500,64,81,65,65,48,60,75,70,12,5,shiftable automatic,300,petrol
+45,INFINITI Q50 RED SPORT 400 Sedan (2020),2020,54250,64,81,65,65,50,60,75,70,13,5,shiftable automatic,400,petrol
+46,INFINITI Q50 2.0t PURE Sedan (2019),2019,35650,64,80,65,65,45,60,75,70,11,5,shiftable automatic,208,petrol
+47,INFINITI Q50 3.0t Signature Edition Sedan (2019),2019,41650,64,80,65,65,45,60,75,70,12,5,shiftable automatic,300,petrol
+48,Mazda 6 Touring Sedan (2020),2020,26700,81,85,80,80,75,80,80,80,10,5,shiftable automatic,187,petrol
+49,Mazda 6 Signature Sedan (2020),2020,35400,81,85,80,80,75,80,80,80,11,5,shiftable automatic,227,petrol
+50,Mazda 6 Grand Touring Sedan (2020),2020,29800,81,85,80,80,75,80,80,80,11,5,shiftable automatic,227,petrol
+51,Mazda 6 Sport Sedan (2019),2019,23800,82,85,80,85,75,80,80,80,10,5,shiftable automatic,187,petrol
+52,Mazda 6 Grand Touring Reserve Sedan (2018),2018,31700,82,85,80,85,75,80,80,80,11,5,shiftable automatic,227,petrol
+53,Lexus IS 300 Sedan (2020),2020,38560,72,70,80,65,65,75,65,80,12,5,shiftable automatic,241,petrol
+54,Lexus IS 300 F SPORT Sedan (2020),2020,41755,72,70,80,65,65,75,65,80,12,5,shiftable automatic,241,petrol
+55,Lexus IS 350 Sedan (2020),2020,42180,73,75,80,65,65,75,65,80,12,5,shiftable automatic,311,petrol
+56,Lexus IS 350 F SPORT Sedan (2020),2020,45375,73,75,80,65,68,75,65,80,12,5,shiftable automatic,311,petrol
+57,Kia Optima LX Sedan (2020),2020,23390,78,80,75,80,80,75,55,75,10,5,shiftable automatic,185,petrol
+58,Kia Optima SX Sedan (2020),2020,32190,78,80,75,81,82,75,55,75,12,5,shiftable automatic,245,petrol
+59,Kia Optima S Sedan (2019),2019,24990,76,80,75,80,75,80,60,75,11,5,shiftable automatic,185,petrol
+60,Kia Optima SX Turbo Sedan (2018),2018,30600,72,60,70,80,75,80,55,70,11,5,shiftable automatic,245,petrol
+61,Kia Optima LX Sedan (2017),2017,22200,70,60,60,70,80,80,60,70,10,5,shiftable automatic,185,petrol
+62,Nissan Altima 2.5 SR Sedan (2020),2020,25700,76,75,75,75,80,80,80,70,9,5,continuous automatic,188,petrol
+63,Nissan Altima 2.5 SL Sedan (2020),2020,30240,76,75,75,75,80,80,80,70,9,5,continuous automatic,188,petrol
+64,Nissan Altima VC-T Platinum Sedan (2020),2020,35180,76,79,75,77,80,80,80,70,10,5,continuous automatic,248,petrol
+65,Nissan Maxima 3.5 S Sedan (2020),2020,34250,74,75,80,70,70,70,65,70,12,5,continuous automatic,300,petrol
+66,Nissan Maxima 3.5 SL Sedan (2020),2020,38640,74,75,80,72,72,70,65,70,12,5,continuous automatic,300,petrol
+67,Nissan Maxima Platinum Sedan (2020),2020,41640,74,75,80,75,75,70,65,70,12,5,continuous automatic,300,petrol
+68,Volvo S60 T6 Momentum Sedan (2020),2020,40550,79,85,75,75,80,75,70,75,11,5,shiftable automatic,316,petrol
+69,Volvo S60 T5 Momentum Sedan (2020),2020,36050,79,85,75,75,80,75,70,75,10,5,shiftable automatic,250,petrol
+70,Volvo S60 T6 Insciption Sedan (2020),2020,47400,79,85,75,75,80,75,70,75,11,5,shiftable automatic,316,petrol
+71,Volvo S60 T8 R-Design Twin Engine Hybrid Sedan (2020),2020,55400,79,87,76,77,80,75,77,75,9,5,shiftable automatic,400,hybrid
+72,Volvo S60 T5 R-Design Sedan (2019),2019,41900,79,85,75,75,80,75,72,75,10,5,shiftable automatic,250,petrol
+73,Hyundai Sonata SE Sedan (2020),2020,23600,80,75,75,80,85,85,70,85,9,5,shiftable automatic,191,petrol
+74,Hyundai Sonata Limited Sedan (2020),2020,33500,80,75,75,80,87,85,70,85,9,5,shiftable automatic,180,petrol
+75,Hyundai Sonata Sport Sedan (2019),2019,25000,77,80,80,80,75,80,70,82,10,5,shiftable automatic,185,petrol
+76,Hyundai Sonata Eco Sedan (2019),2019,22850,77,80,80,80,75,80,70,82,9,5,automated manual,178,hybrid
+77,Hyundai Sonata Limited 2.0T Sedan (2018),2018,31900,77,80,80,80,75,80,70,82,11,5,shiftable automatic,245,petrol
+78,Honda Accord Touring Sedan (2020),2020,36100,83,85,80,80,80,90,70,75,11,5,shiftable automatic,252,petrol
+79,Honda Accord LX Sedan (2020),2020,23870,83,83,80,80,80,90,72,75,9,5,continuous automatic,192,petrol
+80,Honda Accord EX Sedan (2020),2020,27770,83,83,80,80,82,90,72,75,9,5,continuous automatic,192,petrol
+81,Honda Accord Sport Sedan (2019),2019,26180,83,85,80,80,80,95,72,75,9,5,continuous automatic,192,petrol
+82,Honda Accord EX-L Sedan (2018),2018,29970,83,85,80,80,82,95,72,75,9,5,continuous automatic,192,petrol
+83,Chevrolet Malibu L Sedan (2020),2020,22095,76,80,80,70,81,65,72,70,9,5,continuous automatic,160,petrol
+84,Chevrolet Malibu RS Sedan (2020),2020,24220,76,80,80,70,83,65,72,70,9,5,continuous automatic,160,petrol
+85,Chevrolet Malibu Premier Sedan (2020),2020,33320,76,80,80,75,83,65,72,70,11,5,shiftable automatic,250,petrol
+86,Chevrolet Malibu Hybrid Sedan (2019),2019,28220,76,80,80,70,81,65,72,70,6,5,1-speed direct drive,122,hybrid
+87,Ford Taurus SE Sedan (2019),2019,27800,68,70,65,60,75,80,75,68,14,5,shiftable automatic,288,biofuels
+88,Ford Taurus SHO Sedan (2019),2019,42975,68,70,65,70,78,80,75,68,15,5,shiftable automatic,365,petrol
+89,Ford Taurus Limited Sedan (2019),2019,37310,68,70,65,65,75,80,75,68,14,5,shiftable automatic,288,biofuels
+90,Volkswagen Arteon SE Hatchback (2020),2020,35995,75,75,80,75,70,80,70,70,11,5,shiftable automatic,268,petrol
+91,Volkswagen Arteon SEL Premium R-Line Hatchback (2020),2020,47695,75,75,82,80,75,80,70,70,12,5,shiftable automatic,268,petrol
+92,Volkswagen Arteon SE Hatchback (2019),2019,35845,75,75,80,75,70,90,70,70,11,5,shiftable automatic,268,petrol
+93,Volkswagen Arteon SEL Premium Hatchback (2019),2019,44945,75,75,80,79,75,90,70,70,12,5,shiftable automatic,268,petrol
+94,Subaru Legacy Sedan (2020),2020,22745,74,70,80,80,65,80,75,75,9,5,continuous automatic,182,petrol
+95,Subaru Legacy Touring XT Sedan (2020),2020,35895,74,74,80,85,73,80,75,75,11,5,continuous automatic,260,petrol
+96,Subaru Legacy 2.5i Sedan (2019),2019,22545,70,70,75,75,65,80,72,75,10,5,continuous automatic,175,petrol
+97,Subaru Legacy 3.6R Limited Sedan (2019),2019,31545,75,70,75,80,75,80,72,75,12,5,continuous automatic,256,petrol
