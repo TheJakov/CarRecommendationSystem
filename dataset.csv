@@ -85,3 +85,14 @@ car_id,name,year,price,overall_score,driving_score,comfort_score,interior_score,
 84,Chevrolet Malibu RS Sedan (2020),2020,24220,76,80,80,70,83,65,72,70,9,5,automatic,160,petrol
 85,Chevrolet Malibu Premier Sedan (2020),2020,33320,76,80,80,75,83,65,72,70,11,5,automatic,250,petrol
 86,Chevrolet Malibu Hybrid Sedan (2019),2019,28220,76,80,80,70,81,65,72,70,6,5,automatic,122,hybrid
+87,Ford Taurus SE Sedan (2019),2019,27800,68,70,65,60,75,80,75,68,14,5,automatic,288,biofuels
+88,Ford Taurus SHO Sedan (2019),2019,42975,68,70,65,70,78,80,75,68,15,5,automatic,365,petrol
+89,Ford Taurus Limited Sedan (2019),2019,37310,68,70,65,65,75,80,75,68,14,5,automatic,288,biofuels
+90,Volkswagen Arteon SE Hatchback (2020),2020,35995,75,75,80,75,70,80,70,70,11,5,automatic,268,petrol
+91,Volkswagen Arteon SEL Premium R-Line Hatchback (2020),2020,47695,75,75,82,80,75,80,70,70,12,5,automatic,268,petrol
+92,Volkswagen Arteon SE Hatchback (2019),2019,35845,75,75,80,75,70,90,70,70,11,5,automatic,268,petrol
+93,Volkswagen Arteon SEL Premium Hatchback (2019),2019,44945,75,75,80,79,75,90,70,70,12,5,automatic,268,petrol
+94,Subaru Legacy Sedan (2020),2020,22745,74,70,80,80,65,80,75,75,9,5,automatic,182,petrol
+95,Subaru Legacy Touring XT Sedan (2020),2020,35895,74,74,80,85,73,80,75,75,11,5,automatic,260,petrol
+96,Subaru Legacy 2.5i Sedan (2019),2019,22545,70,70,75,75,65,80,72,75,10,5,automatic,175,petrol
+97,Subaru Legacy 3.6R Limited Sedan (2019),2019,31545,75,70,75,80,75,80,72,75,12,5,automatic,256,petrol

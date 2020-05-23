@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRecommendationSystem", "CarRecommendationSystem\CarRecommendationSystem.csproj", "{BFC1A41C-629F-44A9-99CA-8245B5331F6F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRecommendationSystemML.Model", "CarRecommendationSystemML.Model\CarRecommendationSystemML.Model.csproj", "{E52B9A26-ACFA-4F9B-8B3A-3F24164502B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRecommendationSystemML.ConsoleApp", "CarRecommendationSystemML.ConsoleApp\CarRecommendationSystemML.ConsoleApp.csproj", "{F568A0C0-886C-4F30-8B49-5FCED8D29F5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{BFC1A41C-629F-44A9-99CA-8245B5331F6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFC1A41C-629F-44A9-99CA-8245B5331F6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFC1A41C-629F-44A9-99CA-8245B5331F6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E52B9A26-ACFA-4F9B-8B3A-3F24164502B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E52B9A26-ACFA-4F9B-8B3A-3F24164502B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E52B9A26-ACFA-4F9B-8B3A-3F24164502B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E52B9A26-ACFA-4F9B-8B3A-3F24164502B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F568A0C0-886C-4F30-8B49-5FCED8D29F5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F568A0C0-886C-4F30-8B49-5FCED8D29F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F568A0C0-886C-4F30-8B49-5FCED8D29F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F568A0C0-886C-4F30-8B49-5FCED8D29F5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
