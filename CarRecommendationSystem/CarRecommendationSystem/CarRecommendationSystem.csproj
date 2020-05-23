@@ -99,16 +99,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Question1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Question1.Designer.cs">
+      <DependentUpon>Question1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Question2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Question2.Designer.cs">
+      <DependentUpon>Question2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Question3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Question3.Designer.cs">
+      <DependentUpon>Question3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Question4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Question4.Designer.cs">
+      <DependentUpon>Question4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Question5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Question5.Designer.cs">
+      <DependentUpon>Question5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\NavigationHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Question1.resx">
+      <DependentUpon>Question1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Question2.resx">
+      <DependentUpon>Question2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Question3.resx">
+      <DependentUpon>Question3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Question4.resx">
+      <DependentUpon>Question4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Question5.resx">
+      <DependentUpon>Question5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

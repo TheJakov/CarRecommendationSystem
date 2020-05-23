@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CarRecommendationSystem.Forms;
+using CarRecommendationSystem.Helpers;
 
 namespace CarRecommendationSystem
 {
@@ -15,6 +17,12 @@ namespace CarRecommendationSystem
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            Question1 q1 = new Question1();
+            NavigationHelper.GoToForm(this, q1);
         }
     }
 }

@@ -38,7 +38,7 @@ namespace CarRecommendationSystemML.ConsoleApp
             Console.WriteLine($"transmission: {sampleData.Transmission}");
             Console.WriteLine($"horsepower: {sampleData.Horsepower}");
             Console.WriteLine($"fuel: {sampleData.Fuel}");
-            Console.WriteLine($"\n\nActual Name: {sampleData.Name} \nPredicted Name value: {predictionResult.Prediction} \nPrediction accuracy: {predictionResult.Score.Max() * 100}%\nOverall prediction accuracy: 27.85425 \nTotal number of records: {predictionResult.Score.Count()} \nPredicted Name scores: [{String.Join(",", predictionResult.Score)}]\n\n");
+            Console.WriteLine($"\n\nActual Name: {sampleData.Name} \nPredicted Name value: {predictionResult.Prediction} \nPrediction accuracy: {predictionResult.Score.Max() * 100}%\nTotal number of records: {predictionResult.Score.Count()} \nPredicted Name scores: [{String.Join(",", predictionResult.Score)}]\n\n");
             Console.WriteLine("=============== End of process, hit any key to finish ===============");
             Console.ReadKey();
         }
@@ -66,17 +66,17 @@ namespace CarRecommendationSystemML.ConsoleApp
 
             //Under this goes testing override
 
-            sampleForPrediction.Name = "This is custom made user preferences for the car with budget";
-            sampleForPrediction.Price = 34300f;
+            sampleForPrediction.Name = "This are custom made user preferences for the car with budget";
+            sampleForPrediction.Price = 28500f;
             sampleForPrediction.Overall_score = 75;
-            sampleForPrediction.Driving_score = 81;
+            sampleForPrediction.Driving_score = 75;
             sampleForPrediction.Comfort_score = 80;
             sampleForPrediction.Interior_score = 75;
-            sampleForPrediction.Tech_score = 80;
+            sampleForPrediction.Tech_score = 70;
             sampleForPrediction.Storage_score = 85;
             sampleForPrediction.Economical_score = 80;
             sampleForPrediction.Good_value_score = 75;
-            sampleForPrediction.Litres_on_100km = 9;
+            sampleForPrediction.Litres_on_100km = 10;
             sampleForPrediction.Horsepower = 250;
 
             return sampleForPrediction;

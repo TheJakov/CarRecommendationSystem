@@ -1,6 +1,6 @@
-﻿namespace CarRecommendationSystem
+﻿namespace CarRecommendationSystem.Forms
 {
-    partial class Form1
+    partial class Question5
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Question5));
             this.SuspendLayout();
             // 
-            // Form1
+            // Question5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 511);
-            this.Name = "Form1";
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(624, 513);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(640, 552);
+            this.MinimumSize = new System.Drawing.Size(640, 552);
+            this.Name = "Question5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Car Recommendation System";
+            this.Text = "Question 5 - Storage";
             this.ResumeLayout(false);
 
         }
@@ -45,4 +51,3 @@
         #endregion
     }
 }
-
