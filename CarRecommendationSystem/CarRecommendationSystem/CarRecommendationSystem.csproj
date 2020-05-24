@@ -111,6 +111,30 @@
     <Compile Include="Forms\Question1.Designer.cs">
       <DependentUpon>Question1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Question10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Question10.Designer.cs">
+      <DependentUpon>Question10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Question11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Question11.Designer.cs">
+      <DependentUpon>Question11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Question12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Question12.Designer.cs">
+      <DependentUpon>Question12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Question13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Question13.Designer.cs">
+      <DependentUpon>Question13.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Question2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +191,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Question1.resx">
       <DependentUpon>Question1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Question10.resx">
+      <DependentUpon>Question10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Question11.resx">
+      <DependentUpon>Question11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Question12.resx">
+      <DependentUpon>Question12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Question13.resx">
+      <DependentUpon>Question13.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Question2.resx">
       <DependentUpon>Question2.cs</DependentUpon>

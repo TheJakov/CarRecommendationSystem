@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CarRecommendationSystem.Forms
 {
-    public partial class Question9 : Form
+    public partial class Question10 : Form
     {
-        public Question9()
+        public Question10()
         {
             InitializeComponent();
         }
@@ -26,8 +26,8 @@ namespace CarRecommendationSystem.Forms
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            Question10 q10 = new Question10();
-            NavigationHelper.GoToForm(this, q10);
+            Question11 q11 = new Question11();
+            NavigationHelper.GoToForm(this, q11);
         }
     }
 }
