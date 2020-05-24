@@ -63,9 +63,9 @@
             // pictureBoxCar
             // 
             this.pictureBoxCar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCar.Image")));
-            this.pictureBoxCar.Location = new System.Drawing.Point(101, 92);
+            this.pictureBoxCar.Location = new System.Drawing.Point(116, 92);
             this.pictureBoxCar.Name = "pictureBoxCar";
-            this.pictureBoxCar.Size = new System.Drawing.Size(415, 180);
+            this.pictureBoxCar.Size = new System.Drawing.Size(414, 264);
             this.pictureBoxCar.TabIndex = 5;
             this.pictureBoxCar.TabStop = false;
             // 
@@ -73,7 +73,7 @@
             // 
             this.lblDesc.AutoSize = true;
             this.lblDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesc.Location = new System.Drawing.Point(90, 288);
+            this.lblDesc.Location = new System.Drawing.Point(90, 343);
             this.lblDesc.Name = "lblDesc";
             this.lblDesc.Size = new System.Drawing.Size(435, 18);
             this.lblDesc.TabIndex = 6;
@@ -83,7 +83,7 @@
             // 
             this.lblDesc2.AutoSize = true;
             this.lblDesc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesc2.Location = new System.Drawing.Point(161, 306);
+            this.lblDesc2.Location = new System.Drawing.Point(161, 361);
             this.lblDesc2.Name = "lblDesc2";
             this.lblDesc2.Size = new System.Drawing.Size(303, 18);
             this.lblDesc2.TabIndex = 7;
@@ -93,7 +93,7 @@
             // btnStart
             // 
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(173, 362);
+            this.btnStart.Location = new System.Drawing.Point(173, 397);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(272, 53);
             this.btnStart.TabIndex = 8;
@@ -106,7 +106,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(624, 513);
+            this.ClientSize = new System.Drawing.Size(623, 512);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.lblDesc2);
             this.Controls.Add(this.lblDesc);
@@ -114,10 +114,10 @@
             this.Controls.Add(this.lblGradThes);
             this.Controls.Add(this.lblGlavniNaslov);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(640, 552);
-            this.MinimumSize = new System.Drawing.Size(640, 552);
+            this.MaximumSize = new System.Drawing.Size(639, 551);
+            this.MinimumSize = new System.Drawing.Size(639, 551);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Car Recommendation System";
