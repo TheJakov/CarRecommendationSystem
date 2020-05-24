@@ -110,7 +110,7 @@
             this.lblQuestionNumber.Name = "lblQuestionNumber";
             this.lblQuestionNumber.Size = new System.Drawing.Size(65, 24);
             this.lblQuestionNumber.TabIndex = 80;
-            this.lblQuestionNumber.Text = "10 / 14";
+            this.lblQuestionNumber.Text = "12 / 14";
             // 
             // btnCancel
             // 
