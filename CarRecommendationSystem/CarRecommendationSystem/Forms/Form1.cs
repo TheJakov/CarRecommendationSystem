@@ -21,6 +21,7 @@ namespace CarRecommendationSystem
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+            EvaluationHelper.ResetModel();
             Question1 q1 = new Question1();
             NavigationHelper.GoToForm(this, q1);
         }
