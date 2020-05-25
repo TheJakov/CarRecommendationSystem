@@ -26,8 +26,25 @@ namespace CarRecommendationSystem.Forms
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            Question13 q13 = new Question13();
-            NavigationHelper.GoToForm(this, q13);
+            if (!ValidateAnswer())
+            {
+                MessageBox.Show("You need to enter integer value.", "Budget", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtBudget.Clear();
+            }
+            else
+            {
+                // Adjust evaluation model
+                Question13 q13 = new Question13();
+                NavigationHelper.GoToForm(this, q13);
+            }
+        }
+
+        private bool ValidateAnswer()
+        {
+            if (int.TryParse(txtBudget.Text, out int number))
+                return true;
+            else
+                return false;
         }
     }
 }

@@ -26,8 +26,39 @@ namespace CarRecommendationSystem.Forms
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            Question12 q12 = new Question12();
-            NavigationHelper.GoToForm(this, q12);
+            if (!ValidateAnswer())
+                MessageBox.Show("You need to check ONE option.", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+            {
+                // Adjust evaluation model
+                Question12 q12 = new Question12();
+                NavigationHelper.GoToForm(this, q12);
+            }
+        }
+
+        private bool ValidateAnswer()
+        {
+            int numChecked = 0;
+
+            if (cbPetrol.Checked)
+                numChecked++;
+            if (cbDiesel.Checked)
+                numChecked++;
+            if (cbLPG.Checked)
+                numChecked++;
+            if (cbBiofuel.Checked)
+                numChecked++;
+            if (cbHybrid.Checked)
+                numChecked++;
+            if (cbElectric.Checked)
+                numChecked++;
+            if (cbNeutral.Checked)
+                numChecked++;
+
+            if (numChecked == 1)
+                return true;
+            else
+                return false;
         }
     }
 }

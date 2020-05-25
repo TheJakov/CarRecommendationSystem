@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,8 +27,35 @@ namespace CarRecommendationSystem.Forms
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            Question10 q10 = new Question10();
-            NavigationHelper.GoToForm(this, q10);
+            if (!ValidateAnswer())
+                MessageBox.Show("You need to check ONE option.", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+            {
+                // Adjust evaluation model
+                Question10 q10 = new Question10();
+                NavigationHelper.GoToForm(this, q10);
+            }
+        }
+
+        private bool ValidateAnswer()
+        {
+            int numChecked = 0;
+
+            if (cbManual.Checked)
+                numChecked++;
+            if (cbAutomatedManual.Checked)
+                numChecked++;
+            if (cbContAutomatic.Checked)
+                numChecked++;
+            if (cbShiftAutomatic.Checked)
+                numChecked++;
+            if (cbNeutral.Checked)
+                numChecked++;
+
+            if (numChecked == 1)
+                return true;
+            else
+                return false;
         }
     }
 }

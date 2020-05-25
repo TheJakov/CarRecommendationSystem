@@ -26,8 +26,35 @@ namespace CarRecommendationSystem.Forms
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            Results results = new Results();
-            NavigationHelper.GoToForm(this, results);
+            if (!ValidateAnswer())
+                MessageBox.Show("You need to check ONE option.", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+            {
+                // Adjust evaluation model
+                Results results = new Results();
+                NavigationHelper.GoToForm(this, results);
+            }
+        }
+
+        private bool ValidateAnswer()
+        {
+            int numChecked = 0;
+
+            if (cb2020.Checked)
+                numChecked++;
+            if (cb2019.Checked)
+                numChecked++;
+            if (cb2018.Checked)
+                numChecked++;
+            if (cb2017.Checked)
+                numChecked++;
+            if (cbNeutral.Checked)
+                numChecked++;
+
+            if (numChecked == 1)
+                return true;
+            else
+                return false;
         }
     }
 }

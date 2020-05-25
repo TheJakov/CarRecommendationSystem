@@ -26,8 +26,25 @@ namespace CarRecommendationSystem.Forms
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            Question11 q11 = new Question11();
-            NavigationHelper.GoToForm(this, q11);
+            if (!ValidateAnswer())
+            {
+                MessageBox.Show("You need to enter integer value.", "Horsepower", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtHorsePower.Clear();
+            }
+            else
+            {
+                // Adjust evaluation model
+                Question11 q11 = new Question11();
+                NavigationHelper.GoToForm(this, q11);
+            }
+        }
+
+        private bool ValidateAnswer()
+        {
+            if (int.TryParse(txtHorsePower.Text, out int number))
+                return true;
+            else
+                return false;    
         }
     }
 }
