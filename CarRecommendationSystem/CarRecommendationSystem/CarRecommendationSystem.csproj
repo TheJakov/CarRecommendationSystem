@@ -196,6 +196,7 @@
       <DependentUpon>Results.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\NavigationHelper.cs" />
+    <Compile Include="Models\CSVCarModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Form1.resx">
