@@ -35,5 +35,11 @@ namespace CarRecommendationSystem.Models
         public string Transmission { get; set; }
         public int Horsepower { get; set; }
         public string FuelType { get; set; }
+
+        /// <summary>
+        /// Score is calculated in EvalutationHelper class as result of car evaluation
+        /// based on user preferences
+        /// </summary>
+        public int Score { get; set; }
     }
 }

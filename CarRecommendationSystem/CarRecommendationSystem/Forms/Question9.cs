@@ -1,4 +1,5 @@
 ﻿using CarRecommendationSystem.Helpers;
+using CarRecommendationSystem.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,8 @@ namespace CarRecommendationSystem.Forms
 {
     public partial class Question9 : Form
     {
+        private object cbImportant;
+
         public Question9()
         {
             InitializeComponent();
@@ -31,7 +34,7 @@ namespace CarRecommendationSystem.Forms
                 MessageBox.Show("You need to check ONE option.", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
             {
-                // Adjust evaluation model
+                AssignEvaluationModelValue();
                 Question10 q10 = new Question10();
                 NavigationHelper.GoToForm(this, q10);
             }
@@ -56,6 +59,20 @@ namespace CarRecommendationSystem.Forms
                 return true;
             else
                 return false;
+        }
+
+        private void AssignEvaluationModelValue()
+        {
+            if (cbManual.Checked)
+                EvaluationModel.Transmission = "manual";
+            if (cbAutomatedManual.Checked)
+                EvaluationModel.Transmission = "automated manual";
+            if (cbContAutomatic.Checked)
+                EvaluationModel.Transmission = "continuous automatic";
+            if (cbShiftAutomatic.Checked)
+                EvaluationModel.Transmission = "shiftable automatic";
+            if (cbNeutral.Checked)
+                EvaluationModel.Transmission = "any";
         }
     }
 }

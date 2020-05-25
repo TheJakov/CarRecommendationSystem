@@ -24,7 +24,7 @@ namespace CarRecommendationSystem.Models
         public static int? EconomicalScoreCoef;
         public static int? GoodValueScoreCoef;
 
-        public static string FuelConsumption;
+        public static string FuelEfficiency;
 
         public static int? Seats;
 

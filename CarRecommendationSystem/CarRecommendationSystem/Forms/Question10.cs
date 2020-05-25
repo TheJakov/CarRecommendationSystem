@@ -1,4 +1,5 @@
 ﻿using CarRecommendationSystem.Helpers;
+using CarRecommendationSystem.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,7 +34,7 @@ namespace CarRecommendationSystem.Forms
             }
             else
             {
-                // Adjust evaluation model
+                AssignEvaluationModelValue();
                 Question11 q11 = new Question11();
                 NavigationHelper.GoToForm(this, q11);
             }
@@ -45,6 +46,12 @@ namespace CarRecommendationSystem.Forms
                 return true;
             else
                 return false;    
+        }
+
+        private void AssignEvaluationModelValue()
+        {
+            int hp = int.Parse(txtHorsePower.Text);
+            EvaluationModel.Horsepower = hp;
         }
     }
 }

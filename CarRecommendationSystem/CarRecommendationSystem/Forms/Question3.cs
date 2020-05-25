@@ -1,4 +1,5 @@
 ﻿using CarRecommendationSystem.Helpers;
+using CarRecommendationSystem.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +31,7 @@ namespace CarRecommendationSystem.Forms
                 MessageBox.Show("You need to check ONE option.", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
             {
-                // Adjust evaluation model
+                AssignEvaluationModelValue();
                 Question4 q4 = new Question4();
                 NavigationHelper.GoToForm(this, q4);
             }
@@ -51,6 +52,15 @@ namespace CarRecommendationSystem.Forms
                 return true;
             else
                 return false;
+        }
+        private void AssignEvaluationModelValue()
+        {
+            if (cbVeryImportant.Checked)
+                EvaluationModel.InteriorScoreCoef = EvaluationHelper.VeryImportantCoef;
+            if (cbImportant.Checked)
+                EvaluationModel.InteriorScoreCoef = EvaluationHelper.ImportantCoef;
+            if (cbNeutral.Checked)
+                EvaluationModel.InteriorScoreCoef = EvaluationHelper.NeutralCoef;
         }
     }
 }
