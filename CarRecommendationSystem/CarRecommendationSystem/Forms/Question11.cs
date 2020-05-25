@@ -1,4 +1,5 @@
 ﻿using CarRecommendationSystem.Helpers;
+using CarRecommendationSystem.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +31,7 @@ namespace CarRecommendationSystem.Forms
                 MessageBox.Show("You need to check ONE option.", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
             {
-                // Adjust evaluation model
+                AssignEvaluationModelValue();
                 Question12 q12 = new Question12();
                 NavigationHelper.GoToForm(this, q12);
             }
@@ -59,6 +60,24 @@ namespace CarRecommendationSystem.Forms
                 return true;
             else
                 return false;
+        }
+
+        private void AssignEvaluationModelValue()
+        {
+            if (cbPetrol.Checked)
+                EvaluationModel.FuelType = "petrol";
+            if (cbDiesel.Checked)
+                EvaluationModel.FuelType = "diesel";
+            if (cbLPG.Checked)
+                EvaluationModel.FuelType = "lpg";
+            if (cbBiofuel.Checked)
+                EvaluationModel.FuelType = "biofuels";
+            if (cbHybrid.Checked)
+                EvaluationModel.FuelType = "hybrid";
+            if (cbElectric.Checked)
+                EvaluationModel.FuelType = "electric";
+            if (cbNeutral.Checked)
+                EvaluationModel.Transmission = "any";
         }
     }
 }

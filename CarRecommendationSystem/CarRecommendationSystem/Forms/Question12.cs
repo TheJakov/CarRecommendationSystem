@@ -1,4 +1,5 @@
 ﻿using CarRecommendationSystem.Helpers;
+using CarRecommendationSystem.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,7 +34,7 @@ namespace CarRecommendationSystem.Forms
             }
             else
             {
-                // Adjust evaluation model
+                AssignEvaluationModelValue();
                 Question13 q13 = new Question13();
                 NavigationHelper.GoToForm(this, q13);
             }
@@ -45,6 +46,13 @@ namespace CarRecommendationSystem.Forms
                 return true;
             else
                 return false;
+        }
+
+        private void AssignEvaluationModelValue()
+        {
+            int budgetHRK = int.Parse(txtBudget.Text);
+            int budgetUSD = EvaluationHelper.KunasToUSD(budgetHRK);
+            EvaluationModel.Price = budgetUSD;
         }
     }
 }

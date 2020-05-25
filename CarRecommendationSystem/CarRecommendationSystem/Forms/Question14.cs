@@ -1,4 +1,5 @@
 ﻿using CarRecommendationSystem.Helpers;
+using CarRecommendationSystem.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +31,7 @@ namespace CarRecommendationSystem.Forms
                 MessageBox.Show("You need to check ONE option.", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
             {
-                // Adjust evaluation model
+                AssignEvaluationModelValue();
                 Results results = new Results();
                 NavigationHelper.GoToForm(this, results);
             }
@@ -55,6 +56,20 @@ namespace CarRecommendationSystem.Forms
                 return true;
             else
                 return false;
+        }
+
+        private void AssignEvaluationModelValue()
+        {
+            if (cb2020.Checked)
+                EvaluationModel.Year = 2020;
+            if (cb2019.Checked)
+                EvaluationModel.Year = 2019;
+            if (cb2018.Checked)
+                EvaluationModel.Year = 2018;
+            if (cb2017.Checked)
+                EvaluationModel.Year = 2017;
+            if (cbNeutral.Checked)
+                EvaluationModel.Year = -1;
         }
     }
 }

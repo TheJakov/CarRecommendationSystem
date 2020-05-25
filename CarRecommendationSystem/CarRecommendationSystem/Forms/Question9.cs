@@ -15,8 +15,6 @@ namespace CarRecommendationSystem.Forms
 {
     public partial class Question9 : Form
     {
-        private object cbImportant;
-
         public Question9()
         {
             InitializeComponent();
