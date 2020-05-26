@@ -44,6 +44,14 @@ namespace CarRecommendationSystem.Helpers
             return intDolars;
         }
 
+        public static int USDToKunas(int value)
+        {
+            double transform = value * 6.96f;
+            double kunas = Math.Round(transform);
+            int intKunas = int.Parse(kunas.ToString());
+            return intKunas;
+        }
+
         public static void EvaluateList(List<CSVCarModel> carList)
         {
             foreach (var car in carList)
@@ -139,7 +147,7 @@ namespace CarRecommendationSystem.Helpers
         private static void EvaluateBudget(CSVCarModel car)
         {
             if ((int)EvaluationModel.Price >= car.Price)
-                car.Score += 25;
+                car.Score += 50;
         }
 
         private static void EvalutateReleaseYear(CSVCarModel car)

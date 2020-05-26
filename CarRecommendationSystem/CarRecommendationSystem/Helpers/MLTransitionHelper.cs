@@ -8,6 +8,7 @@ using System.Linq;
 using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CarRecommendationSystem.Helpers
 {
@@ -16,6 +17,7 @@ namespace CarRecommendationSystem.Helpers
         private static string delimiter = ",";
         private static string argsPath = @"../../../../Args.txt";
         private static string processPath = @"../../../MLPrediction/bin/Debug/netcoreapp3.1/MLPrediction.exe";
+        private static string processWorkingDirectory = @"../../../MLPrediction/bin/Debug/netcoreapp3.1/";
         private static string CreateUserProfileParameters()
         {
             string userParams = "";
@@ -59,6 +61,7 @@ namespace CarRecommendationSystem.Helpers
         {
             ProcessStartInfo psi = new ProcessStartInfo(processPath);
             psi.UseShellExecute = false;
+            psi.WorkingDirectory = processWorkingDirectory;
 
             try
             {
@@ -67,7 +70,9 @@ namespace CarRecommendationSystem.Helpers
                     mlExeProcess.WaitForExit();
                 }
             }
-            catch { }
+            catch {
+                MessageBox.Show("Something happend.");
+            }
         }
     }
 }
