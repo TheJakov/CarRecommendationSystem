@@ -196,6 +196,7 @@
       <DependentUpon>Results.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\EvaluationHelper.cs" />
+    <Compile Include="Helpers\MLTransitionHelper.cs" />
     <Compile Include="Helpers\NavigationHelper.cs" />
     <Compile Include="Helpers\ReadDatasetHelper.cs" />
     <Compile Include="Models\CSVCarModel.cs" />

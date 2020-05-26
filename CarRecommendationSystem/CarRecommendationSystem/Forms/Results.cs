@@ -18,6 +18,10 @@ namespace CarRecommendationSystem.Forms
         public Results()
         {
             InitializeComponent();
+
+            MLTransitionHelper.WriteUserProfileParamsToFile();
+            MLTransitionHelper.StartMLPredictionProcess();
+            //get labels for ML prediction
             CustomEvalutationAlgorithm();
         }
 
