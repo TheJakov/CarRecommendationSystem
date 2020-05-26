@@ -5,6 +5,7 @@ using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Xml.Serialization;
 
 namespace CarRecommendationSystem.Helpers
@@ -41,6 +42,115 @@ namespace CarRecommendationSystem.Helpers
             double dolars = Math.Round(transform);
             int intDolars = int.Parse(dolars.ToString());
             return intDolars;
+        }
+
+        public static void EvaluateList(List<CSVCarModel> carList)
+        {
+            foreach (var car in carList)
+            {
+                car.Score = 0;
+                EvaluateCoefficients(car);
+                EvaluateSeats(car);
+                EvaluateFuelEfficency(car);
+                EvaluateTransmission(car);
+                EvaluateHorsepower(car);
+                EvaluateFuelType(car);
+                EvaluateBudget(car);
+                EvalutateReleaseYear(car);
+            }
+        }
+
+        private static void EvaluateCoefficients(CSVCarModel car)
+        {
+            int drivingEval = car.DrivingScore * (int)EvaluationModel.DrivingScoreCoef;
+            int comfortEval = car.ComfortScore * (int)EvaluationModel.ComfortScoreCoef;
+            int interiorEval = car.InteriorScore * (int)EvaluationModel.InteriorScoreCoef;
+            int technologyEval = car.TechnologyScore * (int)EvaluationModel.TechnologyScoreCoef;
+            int storageEval = car.StorageScore * (int)EvaluationModel.StorageScoreCoef;
+            int economyEval = car.EconomicalScore * (int)EvaluationModel.EconomicalScoreCoef;
+            int goodValueEval = car.GoodValueScore * (int)EvaluationModel.GoodValueScoreCoef;
+            int overallEval = car.OverallScore * EvaluationModel.OverallScoreCoef;
+
+
+            car.Score += drivingEval + comfortEval + interiorEval + technologyEval + storageEval
+                + economyEval + goodValueEval + overallEval;
+        }
+
+        private static void EvaluateSeats(CSVCarModel car)
+        {
+            if (EvaluationModel.Seats == -1)
+                car.Score += 25;
+            else
+            {
+                if (car.Seats == (int)EvaluationModel.Seats)
+                    car.Score += 25;
+            }
+        }
+
+        private static void EvaluateFuelEfficency(CSVCarModel car) {
+            if (EvaluationModel.FuelEfficiency == "poor")
+                car.Score += 25;
+            else
+            {
+                if (EvaluationModel.FuelEfficiency == "good") {
+                    if (car.Litres100km <= 8)
+                        car.Score += 25;
+                }
+                else if(EvaluationModel.FuelEfficiency == "average")
+                {
+                    if (car.Litres100km <= 11)
+                        car.Score += 25;
+                }
+            }
+        }
+
+        private static void EvaluateTransmission(CSVCarModel car)
+        {
+            if (EvaluationModel.Transmission == "any")
+                car.Score += 25;
+            else
+            {
+                if (EvaluationModel.Transmission == car.Transmission)
+                    car.Score += 25;
+            }
+        }
+
+        private static void EvaluateHorsepower(CSVCarModel car)
+        {
+            // If car has more horsepower, it gets some score points
+            if ((int)EvaluationModel.Horsepower <= car.Horsepower)
+                car.Score += 25;
+            // If car horsepower is in radius of 50 HP, scores additional score
+            if ( Math.Abs((int)EvaluationModel.Horsepower - car.Horsepower) <= 50)
+                car.Score += 25;
+        }
+
+        private static void EvaluateFuelType(CSVCarModel car)
+        {
+            if (EvaluationModel.FuelType == "any")
+                car.Score += 25;
+            else
+            {
+                if (EvaluationModel.FuelType == car.FuelType)
+                    car.Score += 25;
+            }
+        }
+
+        private static void EvaluateBudget(CSVCarModel car)
+        {
+            if ((int)EvaluationModel.Price >= car.Price)
+                car.Score += 25;
+        }
+
+        private static void EvalutateReleaseYear(CSVCarModel car)
+        {
+            if (EvaluationModel.Year == -1)
+                car.Score += 25;
+            else
+            {
+                if (EvaluationModel.Year == car.Year)
+                    car.Score += 25;
+            }
         }
     }
 }

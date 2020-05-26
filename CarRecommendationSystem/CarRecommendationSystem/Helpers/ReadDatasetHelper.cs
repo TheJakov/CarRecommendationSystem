@@ -44,7 +44,7 @@ namespace CarRecommendationSystem.Helpers
 
             //string[] headerAttributes = dataRows[0].Split(splitter);
 
-            for (int i = 0; i < dataRows.Length; i++)
+            for (int i = 1; i < dataRows.Length-1; i++)
             {
                 string[] oneRowCarObject = dataRows[i].Split(splitter);
 
