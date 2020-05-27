@@ -103,5 +103,25 @@ namespace CarRecommendationSystem.Helpers
             }
             return resultList.OrderByDescending(x => x.Confidence).ToList();
         }
+
+        public static List<PredictionResultModel> RemovePossibleLowerConfidenceDuplicates(List<PredictionResultModel> originalList)
+        {
+            List<PredictionResultModel> outList = new List<PredictionResultModel>();
+            outList.Add(originalList.First());
+
+            for (int i = 1; i < originalList.Count; i++)
+            {
+                bool duplicate = false;
+                for (int j = 0; j < outList.Count; j++)
+                {
+                    if (originalList[i].Name == outList[j].Name)
+                        duplicate = true;
+                }
+                if (!duplicate)
+                    outList.Add(originalList[i]);
+            }
+
+            return outList;
+        }
     }
 }

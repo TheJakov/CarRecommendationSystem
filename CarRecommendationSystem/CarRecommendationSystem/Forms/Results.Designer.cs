@@ -114,7 +114,6 @@
             this.lblFinishing = new System.Windows.Forms.Label();
             this.btnAgain = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.btnGithub = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1stAlg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2ndAlg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3rdAlg)).BeginInit();
@@ -988,7 +987,7 @@
             this.btnAgain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgain.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgain.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btnAgain.Location = new System.Drawing.Point(1068, 694);
+            this.btnAgain.Location = new System.Drawing.Point(1071, 690);
             this.btnAgain.Name = "btnAgain";
             this.btnAgain.Size = new System.Drawing.Size(91, 34);
             this.btnAgain.TabIndex = 104;
@@ -1002,7 +1001,7 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btnClose.Location = new System.Drawing.Point(1170, 694);
+            this.btnClose.Location = new System.Drawing.Point(1173, 690);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(152, 34);
             this.btnClose.TabIndex = 105;
@@ -1010,27 +1009,12 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // btnGithub
-            // 
-            this.btnGithub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnGithub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGithub.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGithub.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btnGithub.Location = new System.Drawing.Point(962, 694);
-            this.btnGithub.Name = "btnGithub";
-            this.btnGithub.Size = new System.Drawing.Size(91, 34);
-            this.btnGithub.TabIndex = 106;
-            this.btnGithub.Text = "GitHub";
-            this.btnGithub.UseVisualStyleBackColor = false;
-            this.btnGithub.Click += new System.EventHandler(this.btnGithub_Click);
-            // 
             // Results
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1337, 737);
-            this.Controls.Add(this.btnGithub);
+            this.ClientSize = new System.Drawing.Size(1360, 737);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnAgain);
             this.Controls.Add(this.lblFinishing);
@@ -1118,6 +1102,8 @@
             this.Controls.Add(this.lbl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1376, 776);
+            this.MinimumSize = new System.Drawing.Size(1376, 776);
             this.Name = "Results";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Result page";
@@ -1220,6 +1206,5 @@
         private System.Windows.Forms.Label lblFinishing;
         private System.Windows.Forms.Button btnAgain;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Button btnGithub;
     }
 }

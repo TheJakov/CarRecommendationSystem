@@ -68,6 +68,7 @@ namespace CarRecommendationSystem.Forms
         private void ApplyMLResults()
         {
             List<PredictionResultModel> resultList = ReadDatasetHelper.FetchMLResults();
+            resultList = ReadDatasetHelper.RemovePossibleLowerConfidenceDuplicates(resultList);
 
             ApplyML1stResult(resultList);
             ApplyML2ndResult(resultList);
@@ -87,10 +88,17 @@ namespace CarRecommendationSystem.Forms
                 ML1stTransmission.Text = exactCarModel.Transmission;
                 pictureBox1stML.ImageLocation = imageDir + exactCarModel.ID + ".png";
             }
-            else // Should be executed only if reading/writing exception...
+            else 
             {
-                ML1stCarName.Visible = false;
+                // Should never be executed
+                ML1stCarName.Text = "Something went wrong with generating M rediction.";
                 ML1stNumber.Visible = false;
+                ML1stCarPrice.Visible = false;
+                ML1stHorsepower.Visible = false;
+                ML1stLitres.Visible = false;
+                ML1stFuelType.Visible = false;
+                ML1stTransmission.Visible = false;
+                pictureBox1stML.Visible = false;
             }
         }
 
@@ -109,8 +117,14 @@ namespace CarRecommendationSystem.Forms
             }
             else
             {
-                ML2ndCarName.Visible = false;
+                ML2ndCarName.Text = "2nd Prediction had too low confidence.";
                 ML2ndNumber.Visible = false;
+                ML2ndPrice.Visible = false;
+                ML2ndHorsepower.Visible = false;
+                ML2ndLitres.Visible = false;
+                ML2ndFuelType.Visible = false;
+                ML2ndTransmission.Visible = false;
+                pictureBox2ndML.Visible = false;
             }
         }
 
@@ -129,8 +143,14 @@ namespace CarRecommendationSystem.Forms
             }
             else
             {
-                ML3rdCarName.Visible = false;
+                ML3rdCarName.Text = "3rd Prediction had too low confidence.";
                 ML3rdNumber.Visible = false;
+                ML3rdPrice.Visible = false;
+                ML3rdHorsepower.Visible = false;
+                ML3rdLitres.Visible = false;
+                ML3rdFuelType.Visible = false;
+                ML3rdTransmission.Visible = false;
+                pictureBox3rdML.Visible = false;
             }
         }
 
@@ -154,11 +174,6 @@ namespace CarRecommendationSystem.Forms
         private void btnClose_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void btnGithub_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://github.com/TheJakov/CarRecommendationSystem");
         }
     }
 }
