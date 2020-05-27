@@ -201,6 +201,7 @@
     <Compile Include="Helpers\ReadDatasetHelper.cs" />
     <Compile Include="Models\CSVCarModel.cs" />
     <Compile Include="Models\EvaluationModel.cs" />
+    <Compile Include="Models\PredictionResultModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Form1.resx">

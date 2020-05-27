@@ -1,6 +1,7 @@
 ﻿using CarRecommendationSystem.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ namespace CarRecommendationSystem.Helpers
     public static class ReadDatasetHelper
     {
         private static string filePath = @"../../../../dataset.csv";
+        private static string resultsPath = @"../../../../Results.txt";
 
         public static string ReadCSVData()
         {
@@ -74,6 +76,32 @@ namespace CarRecommendationSystem.Helpers
                 outputListCarModels.Add(tempCarModel);
             }
             return outputListCarModels;
+        }
+
+        public static List<PredictionResultModel> FetchMLResults()
+        {
+            List<PredictionResultModel> resultList = new List<PredictionResultModel>();
+            if (File.Exists(resultsPath))
+            {
+                using(StreamReader stream = File.OpenText(resultsPath))
+                {
+                    string row = "";
+                    while ((row = stream.ReadLine()) != null)
+                    {
+                        string[] dataPair = row.Split(';');
+                        if (dataPair.Length < 2)
+                            break;
+                        else
+                        {
+                            PredictionResultModel resultModel = new PredictionResultModel();
+                            resultModel.Name = dataPair[0].Trim();
+                            resultModel.Confidence = decimal.Parse(dataPair[1].Trim());
+                            resultList.Add(resultModel);
+                        }
+                    }
+                }
+            }
+            return resultList.OrderByDescending(x => x.Confidence).ToList();
         }
     }
 }
