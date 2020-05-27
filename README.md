@@ -3,4 +3,4 @@ Intelligent system (as a .NET Forms application) for user profiling and proposin
 
 ## Notice
 
-🚧 The software is currently under construction and more details will be available soon.
+✨ The software is operational, more detailed description is coming soon.
