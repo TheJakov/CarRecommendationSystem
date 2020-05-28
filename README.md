@@ -27,3 +27,5 @@ Application has two components that generate generations:</br>
 #### c) Result - end screen (two ways of creating recommendations)
 
 <img alt="Results" src="https://github.com/TheJakov/CarRecommendationSystem/blob/master/readme/results.png">
+
+You can even check out [video preview](https://youtu.be/RdYZqLjNA_o).
