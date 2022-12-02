@@ -107,6 +107,10 @@ namespace CarRecommendationSystem.Helpers
         public static List<PredictionResultModel> RemovePossibleLowerConfidenceDuplicates(List<PredictionResultModel> originalList)
         {
             List<PredictionResultModel> outList = new List<PredictionResultModel>();
+
+            if (!originalList.Any())
+                return outList;
+
             outList.Add(originalList.First());
 
             for (int i = 1; i < originalList.Count; i++)
