@@ -198,7 +198,9 @@
     <Compile Include="Helpers\EvaluationHelper.cs" />
     <Compile Include="Helpers\MLTransitionHelper.cs" />
     <Compile Include="Helpers\NavigationHelper.cs" />
+    <Compile Include="Helpers\Strings.cs" />
     <Compile Include="Helpers\ReadDatasetHelper.cs" />
+    <Compile Include="Helpers\UIHelper.cs" />
     <Compile Include="Models\CSVCarModel.cs" />
     <Compile Include="Models\EvaluationModel.cs" />
     <Compile Include="Models\PredictionResultModel.cs" />
