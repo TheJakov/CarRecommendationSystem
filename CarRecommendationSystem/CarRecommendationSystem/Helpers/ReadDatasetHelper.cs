@@ -1,10 +1,7 @@
 ﻿using CarRecommendationSystem.Models;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarRecommendationSystem.Helpers
@@ -44,15 +41,12 @@ namespace CarRecommendationSystem.Helpers
         {
             List<CSVCarModel> outputListCarModels = new List<CSVCarModel>();
 
-            //string[] headerAttributes = dataRows[0].Split(splitter);
-
             for (int i = 1; i < dataRows.Length-1; i++)
             {
                 string[] oneRowCarObject = dataRows[i].Split(splitter);
 
                 // It is assumed that all data available in dataset is formated properly
                 // so there are no any datatype verifications in following step
-
                 CSVCarModel tempCarModel = new CSVCarModel();
 
                 tempCarModel.ID = int.Parse(oneRowCarObject[0].Trim());

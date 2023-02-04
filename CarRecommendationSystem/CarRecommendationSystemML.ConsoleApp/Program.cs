@@ -43,7 +43,6 @@ namespace CarRecommendationSystemML.ConsoleApp
             Console.ReadKey();
         }
 
-        // Change this code to create your own sample data
         #region CreateSingleDataSample
         // Method to load single row of dataset to try a single prediction
         private static ModelInput CreateSingleDataSample(string dataFilePath)
@@ -61,11 +60,9 @@ namespace CarRecommendationSystemML.ConsoleApp
 
             // Use first line of dataset as model input
             // You can replace this with new test data (hardcoded or from end-user application)
-            ModelInput sampleForPrediction = mlContext.Data.CreateEnumerable<ModelInput>(dataView, false)
-                                                                        .First();
+            ModelInput sampleForPrediction = mlContext.Data.CreateEnumerable<ModelInput>(dataView, false).FirstOrDefault();
 
             //Under this goes testing override
-
             sampleForPrediction.Name = "This are custom made user preferences for the car with budget";
             sampleForPrediction.Price = 28500f;
             sampleForPrediction.Overall_score = 75;

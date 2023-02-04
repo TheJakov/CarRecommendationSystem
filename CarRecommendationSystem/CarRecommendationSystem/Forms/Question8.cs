@@ -1,13 +1,6 @@
 ﻿using CarRecommendationSystem.Helpers;
 using CarRecommendationSystem.Models;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarRecommendationSystem.Forms
@@ -19,21 +12,16 @@ namespace CarRecommendationSystem.Forms
             InitializeComponent();
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            Form1 startForm = new Form1();
-            NavigationHelper.GoToForm(this, startForm);
-        }
+        private void btnCancel_Click(object sender, EventArgs e) => NavigationHelper.GoToStartForm(this);
 
         private void btnNext_Click(object sender, EventArgs e)
         {
             if (!ValidateAnswer())
-                MessageBox.Show("You need to check ONE option.", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                UIHelper.ShowInfoMessage(Strings.YouNeedToCheckOneOption, Strings.Oops);
             else
             {
                 AssignEvaluationModelValue();
-                Question9 q9 = new Question9();
-                NavigationHelper.GoToForm(this, q9);
+                NavigationHelper.GoToForm(this, new Question9());
             }
         }
 
@@ -57,11 +45,11 @@ namespace CarRecommendationSystem.Forms
         private void AssignEvaluationModelValue()
         {
             if (cbGood.Checked)
-                EvaluationModel.FuelEfficiency = "good";
+                EvaluationModel.FuelEfficiency = EvaluationHelper.Good;
             if (cbAverage.Checked)
-                EvaluationModel.FuelEfficiency = "average";
+                EvaluationModel.FuelEfficiency = EvaluationHelper.Average;
             if (cbPoor.Checked)
-                EvaluationModel.FuelEfficiency = "poor";
+                EvaluationModel.FuelEfficiency = EvaluationHelper.Poor;
         }
     }
 }

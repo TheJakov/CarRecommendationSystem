@@ -1,13 +1,6 @@
 ﻿using CarRecommendationSystem.Helpers;
 using CarRecommendationSystem.Models;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarRecommendationSystem.Forms
@@ -19,21 +12,16 @@ namespace CarRecommendationSystem.Forms
             InitializeComponent();
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            Form1 startForm = new Form1();
-            NavigationHelper.GoToForm(this, startForm);
-        }
+        private void btnCancel_Click(object sender, EventArgs e) => NavigationHelper.GoToStartForm(this);
 
         private void btnNext_Click(object sender, EventArgs e)
         {
             if (!ValidateAnswer())
-                MessageBox.Show("You need to check ONE option.", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                UIHelper.ShowInfoMessage(Strings.YouNeedToCheckOneOption, Strings.Oops);
             else
             {
                 AssignEvaluationModelValue();
-                Question12 q12 = new Question12();
-                NavigationHelper.GoToForm(this, q12);
+                NavigationHelper.GoToForm(this, new Question12());
             }
         }
 
@@ -65,19 +53,19 @@ namespace CarRecommendationSystem.Forms
         private void AssignEvaluationModelValue()
         {
             if (cbPetrol.Checked)
-                EvaluationModel.FuelType = "petrol";
+                EvaluationModel.FuelType = EvaluationHelper.Petrol;
             if (cbDiesel.Checked)
-                EvaluationModel.FuelType = "diesel";
+                EvaluationModel.FuelType = EvaluationHelper.Diesel;
             if (cbLPG.Checked)
-                EvaluationModel.FuelType = "lpg";
+                EvaluationModel.FuelType = EvaluationHelper.Lpg;
             if (cbBiofuel.Checked)
-                EvaluationModel.FuelType = "biofuels";
+                EvaluationModel.FuelType = EvaluationHelper.Biofuels;
             if (cbHybrid.Checked)
-                EvaluationModel.FuelType = "hybrid";
+                EvaluationModel.FuelType = EvaluationHelper.Hybrid;
             if (cbElectric.Checked)
-                EvaluationModel.FuelType = "electric";
+                EvaluationModel.FuelType = EvaluationHelper.Electric;
             if (cbNeutral.Checked)
-                EvaluationModel.Transmission = "any";
+                EvaluationModel.Transmission = EvaluationHelper.Any;
         }
     }
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace CarRecommendationSystem.Helpers
 {
@@ -15,5 +10,7 @@ namespace CarRecommendationSystem.Helpers
             next.ShowDialog();
             current.Close();
         }
+
+        public static void GoToStartForm(Form current) => GoToForm(current, new Form1());
     }
 }

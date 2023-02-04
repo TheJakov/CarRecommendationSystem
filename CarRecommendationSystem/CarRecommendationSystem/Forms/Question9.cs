@@ -1,14 +1,6 @@
 ﻿using CarRecommendationSystem.Helpers;
 using CarRecommendationSystem.Models;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarRecommendationSystem.Forms
@@ -20,21 +12,16 @@ namespace CarRecommendationSystem.Forms
             InitializeComponent();
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            Form1 startForm = new Form1();
-            NavigationHelper.GoToForm(this, startForm);
-        }
+        private void btnCancel_Click(object sender, EventArgs e) => NavigationHelper.GoToStartForm(this);
 
         private void btnNext_Click(object sender, EventArgs e)
         {
             if (!ValidateAnswer())
-                MessageBox.Show("You need to check ONE option.", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                UIHelper.ShowInfoMessage(Strings.YouNeedToCheckOneOption, Strings.Oops);
             else
             {
                 AssignEvaluationModelValue();
-                Question10 q10 = new Question10();
-                NavigationHelper.GoToForm(this, q10);
+                NavigationHelper.GoToForm(this, new Question10());
             }
         }
 
@@ -62,15 +49,15 @@ namespace CarRecommendationSystem.Forms
         private void AssignEvaluationModelValue()
         {
             if (cbManual.Checked)
-                EvaluationModel.Transmission = "manual";
+                EvaluationModel.Transmission = EvaluationHelper.Manual;
             if (cbAutomatedManual.Checked)
-                EvaluationModel.Transmission = "automated manual";
+                EvaluationModel.Transmission = EvaluationHelper.AutomatedManual;
             if (cbContAutomatic.Checked)
-                EvaluationModel.Transmission = "continuous automatic";
+                EvaluationModel.Transmission = EvaluationHelper.ContinuousAutomatic;
             if (cbShiftAutomatic.Checked)
-                EvaluationModel.Transmission = "shiftable automatic";
+                EvaluationModel.Transmission = EvaluationHelper.ShiftableAutomatic;
             if (cbNeutral.Checked)
-                EvaluationModel.Transmission = "any";
+                EvaluationModel.Transmission = EvaluationHelper.Any;
         }
     }
 }

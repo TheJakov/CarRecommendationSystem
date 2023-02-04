@@ -1,48 +1,38 @@
 ﻿using CarRecommendationSystem.Helpers;
 using CarRecommendationSystem.Models;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarRecommendationSystem.Forms
 {
     public partial class Question12 : Form
     {
+        private int BudgetHrk;
+
         public Question12()
         {
             InitializeComponent();
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            Form1 startForm = new Form1();
-            NavigationHelper.GoToForm(this, startForm);
-        }
+        private void btnCancel_Click(object sender, EventArgs e) => NavigationHelper.GoToStartForm(this);
 
         private void btnNext_Click(object sender, EventArgs e)
         {
             if (!ValidateAnswer())
             {
-                MessageBox.Show("You need to enter integer value.", "Budget", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                UIHelper.ShowInfoMessage(Strings.YouNeedToEnterIntegerValue, Strings.Budget);
                 txtBudget.Clear();
             }
             else
             {
                 AssignEvaluationModelValue();
-                Question13 q13 = new Question13();
-                NavigationHelper.GoToForm(this, q13);
+                NavigationHelper.GoToForm(this, new Question13());
             }
         }
 
         private bool ValidateAnswer()
         {
-            if (int.TryParse(txtBudget.Text, out int number))
+            if (int.TryParse(txtBudget.Text, out BudgetHrk))
                 return true;
             else
                 return false;
@@ -50,8 +40,7 @@ namespace CarRecommendationSystem.Forms
 
         private void AssignEvaluationModelValue()
         {
-            int budgetHRK = int.Parse(txtBudget.Text);
-            int budgetUSD = EvaluationHelper.KunasToUSD(budgetHRK);
+            int budgetUSD = EvaluationHelper.KunasToUSD(BudgetHrk);
             EvaluationModel.Price = budgetUSD;
         }
     }
